@@ -1,0 +1,37 @@
+<ion-content>
+  <div class="container">
+    <ion-card>
+      <ion-card-header color="danger">
+        <ion-card-title>
+          Login
+        </ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-list>
+          <ion-item>
+            <ion-label position="floating">
+              Username
+            </ion-label>
+            <ion-input name="username" type="username" maxlength=16 placeholder="max. of 16 characters">
+            </ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">
+              Password
+            </ion-label>
+            <ion-input name="password" type="password" maxlength=8 placeholder="max of 8 characters">
+            </ion-input>
+          </ion-item>
+        </ion-list>
+        <br/><ion-button color="danger">
+          Login
+        </ion-button>
+        <ion-button color="tertiary" (click)="viewHome()">
+          Back
+        </ion-button>
+        <br/>
+        <p class="ion-text-center">New here? <a href="/register">Click here to register!</a></p>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>
