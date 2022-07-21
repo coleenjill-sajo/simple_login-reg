@@ -1,10 +1,11 @@
 # For academic purposes ONLY.
-Activity 2 | IT331 - Application Development and Emerging Technologies<br/>
-by Coleen Jill Sajo
-<hr>
+Activity 2 | IT331 - Application Development and Emerging Technologies <br/>
+by Coleen Jill F. Sajo <br /><br/>
 A simple "Login Form" and "Registration Form" created using Ionic Framework.
-<hr>
-## Screenshots <br/>
-![image](https://user-images.githubusercontent.com/108327605/180153756-e055601c-b09a-4bf2-8c5c-a99342323340.png) <br/>
-![image](https://user-images.githubusercontent.com/108327605/180153863-720e9fdc-9976-42dd-8f63-944b05582f3c.png) <br/>
-![image](https://user-images.githubusercontent.com/108327605/180153998-f8444198-458b-4aed-9f83-c673a3bad650.png) <br/>
+
+## Screenshots
+![image](https://user-images.githubusercontent.com/108327605/180154574-98bf0e7d-f7ad-48ae-b408-a5a3ef409d97.png) <br/>
+![image](https://user-images.githubusercontent.com/108327605/180154638-cac1a2c5-a036-4c17-bec0-9f0816293ad5.png) <br/>
+![image](https://user-images.githubusercontent.com/108327605/180154682-fee09e7e-8248-42ac-8cee-e96c53abb2e6.png) <br/>
+
+
