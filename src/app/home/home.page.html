@@ -39,7 +39,7 @@
   </ion-toolbar>
 </ion-header>
 <ion-content class="ion-padding">
-  <ion-button expand="block" (click)="setOpen(true)" color="warning">View description</ion-button>
+  <ion-button expand="block" (click)="setOpen(true)" color="warning">Hello World!</ion-button>
   <ion-modal [isOpen]="isModalOpen">
     <ng-template>
       <ion-header>
@@ -52,10 +52,16 @@
       </ion-header>
       <ion-content class="ion-padding">
         <p>
-          Hello! This is a simple demo of a login form and registration form. <br/><br/>
+          This is a simple demo of a login form and registration form. <br/><br/>
           Have fun!
         </p>
       </ion-content>
     </ng-template>
   </ion-modal>
+  <ion-button expand="block" class="ion-text-capitalize" (click)="viewLogin()" color="danger">
+    View Login Form 
+  </ion-button>
+  <ion-button expand="block " class="ion-text-capitalize" (click)="viewReg()" color="secondary">
+    View Registration Form
+  </ion-button>
 </ion-content>
