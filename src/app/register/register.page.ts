@@ -21,7 +21,7 @@ export class RegisterPage {
   async presentAlert() {
     const alert = await this.alertController.create({
       header: 'Congratulations!',
-      message: 'You have successfully logged in!',
+      message: 'You have successfully signed in!',
       buttons: ['OK']
     });
 
