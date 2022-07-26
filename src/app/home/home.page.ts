@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router'
+//import { Router } from '@angular/router';
+import { NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-home',
@@ -8,14 +9,14 @@ import { Router } from '@angular/router'
 })
 export class HomePage {
 
-  constructor(private router: Router) {}
+  constructor(public navCtrl: NavController) {}
 
   viewLogin() {
-    this.router.navigate(['login'])
+    this.navCtrl.navigateForward('login');
   }
 
   viewReg(){
-    this.router.navigate(['register'])
+    this.navCtrl.navigateForward('register');
   }
 
 }
