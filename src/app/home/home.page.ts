@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 //import { Router } from '@angular/router';
-import { NavController } from '@ionic/angular';
+import { NavController, ActionSheetController } from '@ionic/angular';
 
 @Component({
   selector: 'app-home',
@@ -9,12 +9,34 @@ import { NavController } from '@ionic/angular';
 })
 export class HomePage {
 
-  isModalOpen = false;
+  presentingElement = undefined;
 
-  constructor(public navCtrl: NavController) {}
+  constructor(public navCtrl: NavController, public actionSheetCtrl: ActionSheetController) {}
 
-  setOpen(isOpen: boolean) {
-    this.isModalOpen = isOpen;
+  ngOnInit(){
+    this.presentingElement = document.querySelector('.ion-page');
+  }
+
+  canDismiss =async () => {
+    const actionSheet = await this.actionSheetCtrl.create({
+      header: 'Close modal?',
+      buttons: [
+        {
+          text: 'Yes',
+          role: 'confirm',
+        },
+        {
+          text: 'No',
+          role: 'cancel',
+        },
+      ],
+    });
+
+    actionSheet.present();
+
+    const { role } = await actionSheet.onWillDismiss();
+
+    return role === 'confirm';
   }
   
   viewLogin() {
