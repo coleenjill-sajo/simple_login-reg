@@ -20,6 +20,12 @@ export class LoginPage{
   }
 
   async presentAlert() {
-    
+    const alert = await this.alertController.create({
+      header: 'Congratulations!',
+      message: 'You have successfully logged in!',
+      buttons: ['OK']
+    });
+
+    await alert.present();
   }
 }
