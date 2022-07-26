@@ -10,10 +10,16 @@ import { NavController, NavParams, AlertController } from '@ionic/angular';
 })
 export class LoginPage{
 
-  constructor(public navCtrl: NavController, public alertController: AlertController) { }
+  username: string = "";
+  
+  constructor(public navCtrl: NavController, public alertController: AlertController, public navParams: NavParams) {
+    let username = this.navParams.get("username");
+    console.log(username);
 
-  ngOnInit() {
-  }
+   }
+
+//  ngOnInit() {
+  //}
 
   viewHome() {
     this.navCtrl.navigateRoot('');
