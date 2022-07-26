@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router'
-import { NavController} from '@ionic/angular';
 
 @Component({
   selector: 'app-login',
@@ -9,13 +8,13 @@ import { NavController} from '@ionic/angular';
 })
 export class LoginPage implements OnInit {
 
-  constructor(private router: Router, public navCtrl: NavController) { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
   }
 
   viewHome() {
-    this.navCtrl.pop();
+    this.router.navigate([''])
   }
 
 }
