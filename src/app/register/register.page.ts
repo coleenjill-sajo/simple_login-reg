@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 //import { Router } from '@angular/router';
-import { NavController, NavParams } from '@ionic/angular';
+import { NavController, NavParams, AlertController } from '@ionic/angular';
 
 @Component({
   selector: 'app-register',
@@ -9,12 +9,16 @@ import { NavController, NavParams } from '@ionic/angular';
 })
 export class RegisterPage {
 
-  constructor(public navCtrl: NavController) { }
+  constructor(public navCtrl: NavController, public alertController: AlertController) { }
 
   ngOnInit() {
   }
 
   viewHome() {
     this.navCtrl.navigateRoot('');
+  }
+
+  async presentAlert() {
+    
   }
 }
