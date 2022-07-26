@@ -34,17 +34,17 @@
 -->
 
 <ion-header>
-  <ion-toolbar>
-    <ion-title>Inline Modal</ion-title>
+  <ion-toolbar color = "primary">
+    <ion-title>Activity 2 & 3</ion-title>
   </ion-toolbar>
 </ion-header>
 <ion-content class="ion-padding">
-  <ion-button expand="block" (click)="setOpen(true)">Open</ion-button>
+  <ion-button expand="block" (click)="setOpen(true)" color="warning">View description</ion-button>
   <ion-modal [isOpen]="isModalOpen">
     <ng-template>
       <ion-header>
         <ion-toolbar>
-          <ion-title>Modal</ion-title>
+          <ion-title>Welcome to the world!</ion-title>
           <ion-buttons slot="end">
             <ion-button (click)="setOpen(false)">Close</ion-button>
           </ion-buttons>
@@ -52,9 +52,8 @@
       </ion-header>
       <ion-content class="ion-padding">
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni illum quidem recusandae ducimus quos
-          reprehenderit. Veniam, molestias quos, dolorum consequuntur nisi deserunt omnis id illo sit cum qui. Eaque,
-          dicta.
+          Hello! This is a simple demo of a login form and registration form. <br/><br/>
+          Have fun!
         </p>
       </ion-content>
     </ng-template>
