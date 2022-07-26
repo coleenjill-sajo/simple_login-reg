@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router'
+import { Router } from '@angular/router';
+
+//In Ionic v4, "major changes were made to navigation and routing"
+//NavController and ion-nav have now been deprecated
 
 @Component({
   selector: 'app-login',
