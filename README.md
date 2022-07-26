@@ -1,8 +1,8 @@
 # For academic purposes ONLY.
 Activity 2&3 | IT331 - Application Development and Emerging Technologies <br/>
 by Coleen Jill F. Sajo <br /><br/>
-A simple "Login Form" and "Registration Form" created using Ionic Framework.
-
+A simple "Login Form" and "Registration Form" created using Ionic Framework. <br/><br/>
+[UPDATE (07/26): Action sheet, modal, and alert boxes are added. (I don't know a good place to put a pop-over.)]
 ## Screenshots
 ![image](https://user-images.githubusercontent.com/108327605/180978819-79ce9306-9ec4-4abb-a6d4-7ebd7bbd23c4.png) <br/>
 ![image](https://user-images.githubusercontent.com/108327605/180978919-2beca172-a82e-4623-8a65-b425ae81b8c8.png) <br/>
