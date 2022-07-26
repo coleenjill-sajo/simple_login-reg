@@ -9,8 +9,14 @@ import { NavController } from '@ionic/angular';
 })
 export class HomePage {
 
+  isModalOpen = false;
+
   constructor(public navCtrl: NavController) {}
 
+  setOpen(isOpen: boolean) {
+    this.isModalOpen = isOpen;
+  }
+  
   viewLogin() {
     this.navCtrl.navigateForward('login');
   }
