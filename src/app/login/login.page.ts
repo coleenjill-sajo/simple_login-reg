@@ -1,10 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 //import { Router } from '@angular/router';
-import { NavController, NavParams } from '@ionic/angular';
-import { HomePage } from '../home/home.page';
-
-//In Ionic v4, "major changes were made to navigation and routing"
-//NavController and ion-nav have now been deprecated, as Angular routing has been used in the new version
+import { NavController, NavParams, AlertController } from '@ionic/angular';
+//import { HomePage } from '../home/home.page';
 
 @Component({
   selector: 'app-login',
@@ -13,7 +10,7 @@ import { HomePage } from '../home/home.page';
 })
 export class LoginPage{
 
-  constructor(public navCtrl: NavController) { }
+  constructor(public navCtrl: NavController, public alertController: AlertController) { }
 
   ngOnInit() {
   }
@@ -22,4 +19,7 @@ export class LoginPage{
     this.navCtrl.navigateRoot('');
   }
 
+  async presentAlert() {
+    
+  }
 }
