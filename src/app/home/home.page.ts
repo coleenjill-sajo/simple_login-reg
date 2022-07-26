@@ -19,7 +19,7 @@ export class HomePage {
 
   canDismiss =async () => {
     const actionSheet = await this.actionSheetCtrl.create({
-      header: 'Close modal?',
+      header: 'Close description?',
       buttons: [
         {
           text: 'Yes',
