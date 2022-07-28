@@ -1,5 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { Router } from '@angular/router';
+import { ToastController } from '@ionic/angular';
+import { Authenticator } from '../controller/authenticator';
+import { async } from '@firebase/util';
 
 @Component({
   selector: 'app-helloworld',
@@ -10,7 +14,10 @@ export class HelloworldPage implements OnInit {
 
   catFact: any = {};
 
-  constructor(private http: HttpClient) {
+  constructor(private http: HttpClient,
+    private router: Router,
+    private auth: Authenticator,
+    private toastCtrl: ToastController) {
 
     this.runHttp();
    }
@@ -28,4 +35,18 @@ export class HelloworldPage implements OnInit {
     })
   }
 
+  async logout(){
+    this.auth.logout()
+    .then(authState => {
+      this.router.navigate(['/login']);
+    })
+    .catch(async err => {
+      const toast = await this.toastCtrl.create({
+        message: 'Logout Failed',
+        duration: 3000,
+        position: 'bottom'
+      });
+      toast.present();
+    })
+  }
 }
