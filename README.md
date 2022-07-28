@@ -1,5 +1,5 @@
 # For academic purposes ONLY.
-Activity 2&3 | IT331 - Application Development and Emerging Technologies <br/>
+Activity in IT-331 Application Development and Emerging Technologies <br/>
 by Coleen Jill F. Sajo <br /><br/>
 A simple "Login Form" and "Registration Form" created using Ionic Framework. <br/><br/>
 [UPDATE (07/26): Action sheet, modal, and alert boxes are added. (I don't know a good place to put a pop-over.)]
