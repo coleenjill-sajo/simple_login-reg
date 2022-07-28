@@ -4,9 +4,15 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content [fullscreen]="true">
   <div id="container">
-    <ion-button (click)="runHttp()">Test Me</ion-button>
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title> A Random Cat Fact</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <p>{{catFact.fact}}</p>
+      </ion-card-content>
+    </ion-card>
   </div>
-
 </ion-content>

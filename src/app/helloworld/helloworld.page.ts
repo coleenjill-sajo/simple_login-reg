@@ -8,18 +8,23 @@ import { HttpClient } from '@angular/common/http';
 })
 export class HelloworldPage implements OnInit {
 
-  constructor(private http: HttpClient) { }
+  catFact: any = {};
+
+  constructor(private http: HttpClient) {
+
+    this.runHttp();
+   }
 
   ngOnInit() {
   }
 
-  //Error 401: Unauthorized
   runHttp(){
-    this.http.get('https://api.spotify.com/v1/browse/new-releases')
+    this.http.get('https://catfact.ninja/fact')
     .subscribe(data => {
       console.log(data)
+      this.catFact = data;
     }, (error) =>{
-      console.log
+      console.log(error)
     })
   }
 
