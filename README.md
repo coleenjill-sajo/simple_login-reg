@@ -2,7 +2,7 @@
 Activity in IT-331 Application Development and Emerging Technologies <br/>
 by Coleen Jill F. Sajo <br /><br/>
 A simple "Login Form" and "Registration Form" created using Ionic Framework. <br/><br/>
-[UPDATE (07/28): Added REST/HTTP API and Firebase authentication. (Scroll down to check new screenshots.)]
+[UPDATE (07/28): Added REST/HTTP API and Firebase authentication. (Scroll down to check new screenshots.)] <br/>
 [UPDATE (07/26): Action sheet, modal, and alert boxes are added. (I don't know a good place to put a pop-over.)]
 ## Screenshots
 ![image](https://user-images.githubusercontent.com/108327605/180978819-79ce9306-9ec4-4abb-a6d4-7ebd7bbd23c4.png) <br/>
