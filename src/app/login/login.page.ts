@@ -22,7 +22,12 @@ export class LoginPage{
     this.navCtrl.navigateRoot('');
   }
 
-  async presentAlert() {
+  login(){
+    
+  }
+  
+  
+  /*async presentAlert() {
     const alert = await this.alertController.create({
       header: 'Congratulations!',
       message: 'You have successfully logged in!',
@@ -30,5 +35,5 @@ export class LoginPage{
     });
 
     await alert.present();
-  }
+  }*/
 }
