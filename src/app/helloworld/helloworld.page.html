@@ -1,14 +1,15 @@
 <ion-header>
-  <ion-toolbar>
+  <ion-toolbar color="primary" >
     <ion-title>Hello World!</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
+<ion-content [fullscreen] = "true">
   <div id="container">
     <ion-card>
       <ion-card-header>
         <ion-card-title> A Random Cat Fact</ion-card-title>
+        <ion-card-subtitle>Did you know...?</ion-card-subtitle>
       </ion-card-header>
       <ion-card-content>
         <p>{{catFact.fact}}</p>
