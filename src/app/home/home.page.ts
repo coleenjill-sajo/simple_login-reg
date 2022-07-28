@@ -48,7 +48,7 @@ export class HomePage {
   }
 
   viewMain(){
-    this.navCtrl.navigateForward('main-page');
+    this.navCtrl.navigateForward('helloworld');
   }
 
 }
