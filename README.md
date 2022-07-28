@@ -17,8 +17,10 @@ A simple "Login Form" and "Registration Form" created using Ionic Framework. <br
 ![image](https://user-images.githubusercontent.com/108327605/181479574-c0251c9f-e94a-44a2-81e5-598b5059b830.png)
 ![image](https://user-images.githubusercontent.com/108327605/181479630-a1421b3d-e462-416d-bdc8-24180f0c70f1.png)
 ![image](https://user-images.githubusercontent.com/108327605/181479924-ed966c60-b7ed-4b98-87a9-e028c9ab12b8.png)
-![image](https://user-images.githubusercontent.com/108327605/181480479-d52109d7-359e-4793-9d67-5acfedd69380.png)
+![image](https://user-images.githubusercontent.com/108327605/181481902-757d6040-4a2b-48f3-833d-f4cddebded58.png)
 ![image](https://user-images.githubusercontent.com/108327605/181480044-0e47d869-cb99-464e-8fb9-63fbbd01073f.png)
+![image](https://user-images.githubusercontent.com/108327605/181481932-208c6896-a5d7-4fa3-a5fb-5858d6f30c28.png)
+
 
 
 
