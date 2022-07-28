@@ -47,4 +47,8 @@ export class HomePage {
     this.navCtrl.navigateForward('register');
   }
 
+  viewMain(){
+    this.navCtrl.navigateForward('main-page');
+  }
+
 }

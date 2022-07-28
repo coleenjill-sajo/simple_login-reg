@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { HttpClient} from '@angular/common/http';
 
 @Component({
   selector: 'app-main-page',
@@ -8,9 +8,15 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 })
 export class MainPagePage implements OnInit {
 
-  constructor() { }
+  constructor(private http: HttpClient) { }
 
   ngOnInit() {
   }
 
+  runHttp(){
+    this.http.get('https://api.spotify.com/v1/browse/new-releases')
+    .subscribe(data => {
+      console.log(data)
+    })
+  }
 }
