@@ -7,24 +7,24 @@
         </ion-card-title>
       </ion-card-header>
       <ion-card-content>
-        <form>
+        <form #form="ngForm" (ngSubmit)="login(form)">
           <ion-list>
             <ion-item>
               <ion-label position="floating">
                 Email
               </ion-label>
-              <ion-input name="email" type="email" inputmode="email">
+              <ion-input name="email" type="email" inputmode="email" ngModel required>
               </ion-input>
             </ion-item>
             <ion-item>
               <ion-label position="floating">
                 Password
               </ion-label>
-              <ion-input name="password" type="password" maxlength=8 placeholder="max of 8 characters">
+              <ion-input name="password" type="password" maxlength=8 placeholder="max of 8 characters" ngModel required>
               </ion-input>
             </ion-item>
           </ion-list>
-          <br/><ion-button color="danger" (click)="login()">
+          <br/><ion-button color="danger" type="submit" [disabled]="form.invalid">
             Login
           </ion-button>
           <ion-button color="tertiary" (click)="viewHome()">
@@ -32,7 +32,7 @@
           </ion-button>
         </form>
         <br/>
-        <p>New here? <a href="/register">Click here to register!</a></p>
+        <p>New here? <a routerLink="/register">Click here to register!</a></p>
       </ion-card-content>
     </ion-card>
   </div>

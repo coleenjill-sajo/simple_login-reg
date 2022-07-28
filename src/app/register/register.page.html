@@ -10,70 +10,75 @@
         </ion-card-subtitle>
       </ion-card-header>
       <ion-card-content>
-        <ion-list>
+        <form #form="ngForm" (ngSubmit)="register(form)">
+          <ion-list>
             <ion-item-group>
               <ion-item>
                 <ion-label position="floating">
                   Full Name
                 </ion-label>
-                <ion-input clearOnEdit="true" autofocus=true maxlength="30"></ion-input>
+                <ion-input name="name" type="text" clearOnEdit="true" autofocus=true maxlength="30" ngModel required></ion-input>
               </ion-item>
+              <!--
               <ion-item>
                 <ion-label position="stacked">
                   Date of birth
-                </ion-label><ion-input type="date"></ion-input>
+                </ion-label><ion-input name="dob" type="date" ngModel required></ion-input>
               </ion-item>
               <ion-item lines="none">
                 <ion-label>
                   Gender
                 </ion-label>
               </ion-item>
-                <ion-radio-group>
+                <ion-radio-group name="gender">
                   <ion-item lines="none">
                     <ion-label>Male</ion-label>
-                    <ion-radio slot="start" value="Male"></ion-radio>
+                    <ion-radio name="male" slot="start" value="Male"></ion-radio>
                   </ion-item>
                   <ion-item lines="none">
-                    <ion-label>Female</ion-label><ion-radio slot="start"></ion-radio>
+                    <ion-label>Female</ion-label><ion-radio name="female" slot="start"></ion-radio>
                   </ion-item>
                 </ion-radio-group>
+
+                (momentarily removed, as I don't have enough time to properly register the values)
+              -->
               <ion-item>
                   <ion-label position="floating">
                     Email
                   </ion-label>
-                  <ion-input type="email" inputmode="email">  
+                  <ion-input name="email" type="email" inputmode="email" ngModel required>  
                   </ion-input>
-                </ion-item>
-                <ion-item>
-                  <ion-label position="floating">
-                    Phone
-                  </ion-label>
-                    <ion-input name="phone" inputmode="tel" maxlength="11">
-                    </ion-input>
                 </ion-item>
               <ion-item>
                 <ion-label position="floating">
                   Username
                 </ion-label>
-                <ion-input type="username" maxlength=16 placeholder="max. of 16 characters">
+                <ion-input name="username" type="username" maxlength=16 placeholder="max. of 16 characters" ngModel required>
                 </ion-input>
               </ion-item>
               <ion-item>
                 <ion-label position="floating">
                   Password
                 </ion-label>
-                <ion-input type="password" maxlength=8 placeholder="max of 8 characters">
+                <ion-input name="password" type="password" maxlength=8 placeholder="max of 8 characters" ngModel required>
+                </ion-input>
+              </ion-item>
+              <ion-item>
+                <ion-label position="floating">
+                  Confirm Password
+                </ion-label>
+                <ion-input name="confPass" type="password" maxlength=8 placeholder="max of 8 characters" ngModel required>
                 </ion-input>
               </ion-item>
               </ion-item-group>
         </ion-list>
-
-        <ion-button color="secondary" (click)="presentAlert()">
+        <ion-button color="secondary" type="submit" [disabled]="form.invalid">
           Sign Up
         </ion-button>
         <ion-button  color="tertiary"(click)="viewHome()">
           Back
-        </ion-button>
+        </ion-button>  
+      </form>
         <br/>
         <p>Have an account? <a href="/login">Click here to login!</a></p>
       </ion-card-content>
